@@ -29,3 +29,14 @@ function View1Ctrl(myData){
 `view1` - state name
 
 `{itemId:someVal}` - param name/value pairs
+
+***
+#### _Summary_
+* State's URL property can be declared with parameters.
+* Parameters:
+    * wrapped in curly braces (`{paramName}`);
+    * can have more complex matching rules other than just a string;
+    * support regular expression matching.
+* Use `$stateParams` service to retrieve parameters (`$stateParams.paramName`).
+* Construct a URL with ui-sref directive: `ui-sref="stateName({paramName:value})"`
+***
